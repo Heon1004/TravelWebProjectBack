@@ -1,0 +1,16 @@
+.container{height: 100%; margin: 0 150px; position: relative; display: inline-block; box-sizing: border-box; text-align: left; }
+.content{width: 520px; height: 100%; background-color: white; left: 330px; position: relative; display: block; margin: 15px 0; padding: 10px;}
+.content-title{font-size: 20px; line-height: 40px; display: flex; position: relative; }
+.content-title span::after{float: right; content: ":";}
+.content-title span{width: 150px;}
+
+.nav-title{left: 480px;  display: inline-block; margin: 5px 0 0 0; font-size: 26px; font-weight: bold; position: relative; text-align: center; }
+.content-item{padding: 0 20px; font-size: 16px; letter-spacing:1px;}
+
+.content-btn{float : right;}
+.content>button{cursor: pointer; margin-top: 20px; margin-bottom: 10px; width: 80px; float: left;}
+
+.content-btn button{cursor: pointer; margin-top: 20px; margin-bottom: 10px;  width: 80px;}
+.content-btn a{color: black;}
+
+.content>h2{text-align: center; color:black; font-size: 30px; }

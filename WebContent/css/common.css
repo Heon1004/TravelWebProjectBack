@@ -1,0 +1,94 @@
+@charset "UTF-8";
+body{box-sizing: border-box; position: relative; height: 100%; width: 100%; margin: 0; padding: 0;  font-family: 'Sawarabi Gothic', sans-serif;}
+main{ display: block; height: 100%; width: 100%; background-color: whitesmoke; position: relative; padding: 0 0 0 0; margin: 0;}
+header {margin:0 150px;box-sizing: border-box; height: 100%; padding: 0;}
+a, div.notice-title, div.notice-item{text-decoration:none;}
+/*Header*/
+.hd-menu{display: block;height: 51px; }
+.logo-con{box-sizing:border-box;width: 120px; margin-top: 8px; position: absolute;height: 30px;display: inline-block; }
+.logo-con-link{width: 100%;height: 100%; position: relative;display: inline-block; font-size: 18px; font-style: 800; text-align: center;}
+.func_con{padding: 0 5px;position:relative;float: right; margin-top: 10px;}
+.notice-btn,.ordersearch-btn{position: relative;display:flex;float: left;text-align: center;font-size: 14px;margin: 0 10px 0 10px;}
+.account-con{float: right;font-size: 16px; height: 30px;}
+.account-con>span{color: black; position: relative;text-align: center;padding: 0px;margin: 0; }
+.account-btn {color: black;background-color: white; font-size: 15px; width: 70px; padding: 0; margin: 0; height: 28px; border: none; outline: none; cursor: pointer;}
+.account-btn:hover {color: slateblue;}
+
+/*Drop down Menu*/
+.myaccount-con{position: relative; display: block; float: right; margin-top: 10px; box-sizing: border-box;}
+.account-drop{margin: 0; padding: 0; display: block; position: relative; border: 0; outline: none;}
+.drop-item{margin: 0; padding: 0; display: block; text-align: left; font-weight: 100;}
+.drop-item>button {background-color: white; border: none; font-size: 16px; font-weight: bold; outline: none; text-align: left; cursor: pointer;}
+.drop-item>button:hover{color: slateblue;}
+.dropmenu{margin: 0; padding: 0; display: none; position: absolute; z-index: 10; text-align: center; font-weight: 100; text-decoration: none; list-style: none;}
+.dropmenu>li>a{ color: gray; line-height: 10px;font-size: 14px; } 
+.dropmenu>li>a:hover{color: slateblue; font-weight: bold; }
+
+/*Login-Modal*/ /* rgb(172, 71, 255) purpleみたいな綺麗な色 */
+.login-modal-con{ display: none;position: fixed; z-index: 10;left: 0;top: 0; height: 100%; width: 100%; overflow: auto; background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4); }
+.login-modal{background-color: #fefefe; margin: 90px auto; padding: 20px;border: 1px solid #888;width: 400px; height: 450px; border-radius: 30px; text-align: left;}
+.close-btn{float: right; background-color: white; border: none; cursor: pointer;}
+.login-modal>form>h2 { color: rgb(172, 71, 255);font-size: 2em; text-align: center; background-color: white; border: none;}
+.forgot-pw>button{border: none; background-color: white; color: gray; display: block; text-align: center; cursor: pointer;  }
+.forgot-pw>button:hover, .register-link>button:hover{color: slateblue;}
+.login-email>input:focus , .login-pw>input:focus{border: 3px solid slateblue;}
+.login-email {margin-top: 20px;width: 90%; height: 110px;}
+.login-modal>form>div>h4{margin: 10px; width: 60%;}
+.login-email input {width: 100%;height: 50px;border-radius: 30px;margin-top: 10px;padding: 0px 20px;border: 1px solid lightgray;outline: none;}
+.login-pw {margin-top: 20px;width: 90%; height: 110px;}
+.login-pw input {width: 100%;height: 50px;border-radius: 30px;margin-top: 10px;padding: 0px 20px;border: 1px solid lightgray;outline: none;}
+.login-etc{padding: 0; width: 90%;font-size: 14px; margin-top: 10px; display: flex;justify-content: space-between;align-items: center;font-weight: bold;}
+.register-link{ float: right;}
+.register-link>button{color: gray; border: none; background-color: white; display: block; cursor: pointer; text-decoration: none; font-size: 14px; }
+.login-submit {margin-top:30px;width: 100%;}
+.login-submit input {width: 100%;height: 50px;border: 0;outline: none; font-size: 24px; border-radius: 40px;background: linear-gradient(to left, rgb(255, 77, 46), slateblue);color: white;letter-spacing: 2px; cursor: pointer;}
+
+/*register-Modal*/
+.register-modal-con{ display: none;position: fixed; z-index: 10;left: 0; top: 0; height: 100%; width: 100%; overflow: auto; background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4); }
+.register-modal{background-color: #fefefe; margin: 0px auto; margin-top: 70px; padding: 20px;border: 1px solid #888; width: 400px; border-radius: 30px; text-align: left;}
+.close-btn{float: right; background-color: white; border: none; cursor: pointer;}
+.register-modal>form>h2 { color: rgb(172, 71, 255);font-size: 2em; text-align: center; background-color: white; border: none;}
+.register-item {margin-top: 20px;width: 90%; height: 100px;}
+.register-item>input:focus{border: 3px solid slateblue;}
+.register-item input {width: 100%;height: 50px;border-radius: 30px;margin-top: 10px;padding: 0px 20px;border: 1px solid lightgray;outline: none;}
+.register-item>h4{margin: 10px;}
+.register-item-name{margin-top: 20px;width: 100%; display: flex; height: 70px;}
+.register-item-name>input{width: 50%;height: 50px;border-radius: 30px;margin-top: 10px;padding: 0px 20px;border: 1px solid lightgray;outline: none;}
+.register-item-name>h4{margin: 10px;}
+.register-item-name>input:focus{border: 3px solid slateblue;}
+.login-item{margin-top: 10px;}
+.login-item>button{color: gray; border: none; background-color: white; display: block; cursor: pointer; text-decoration: none; font-size: 14px; }
+.login-item>button:hover{color: slateblue;}
+.register-submit {margin-top:30px;width: 100%;}
+.register-submit input {width: 100%;height: 50px;border: 0;outline: none; font-size: 24px; border-radius: 40px;background: linear-gradient(to left, rgb(255, 77, 46), slateblue);color: white;letter-spacing: 2px; cursor: pointer;}
+.msg {color:red; font-size: 14px; text-align: center; padding-left:10px;}
+
+/*forgot-Modal*/
+.forgot-modal-con{ display: none;position: fixed; z-index: 10;left: 0;top: 0; height: 100%; width: 100%; overflow: auto; background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4); }
+.forgot-modal{background-color: #fefefe; margin: 90px auto; padding: 20px;border: 1px solid #888;width: 400px; border-radius: 30px; text-align: left;}
+.close-btn{float: right; background-color: white; border: none; cursor: pointer;}
+.forgot-modal>form>h2 { color: rgb(172, 71, 255);font-size: 2em; text-align: center; background-color: white; border: none;}
+.forgot-item {margin-top: 20px;width: 80%; height: 100px;}
+.forgot-item input {width: 100%;height: 50px;border-radius: 30px;margin-top: 10px;padding: 0px 20px;border: 1px solid lightgray;outline: none;}
+.forgot-item>input:focus{border: 3px solid slateblue;}
+
+.forgot-item>h4{margin: 10px;}
+.forgot-submit {margin-top:30px;width: 100%;}
+.forgot-submit input {width: 100%;height: 50px;border: 0;outline: none; font-size: 24px; border-radius: 40px;background: linear-gradient(to left, rgb(255, 77, 46), slateblue);color: white;letter-spacing: 2px; cursor: pointer;}
+
+/*NAV*/
+.nav-con{ width: 100%; height: 100%; position: relative;display: inline-flex; margin: 0; padding: 0;}
+.nav-con > ul{padding: 0; height: 27px;}
+.nav-item{padding: 0 10px 0 10px; list-style:none; position: relative; text-align: left;display: table-cell; font-size: 18px;border-right: 1px solid black;}
+.nav-item a{color: black; font-weight: 600;}
+.nav-item a:hover{color: slateblue; }
+.nav-item:hover{border-bottom: 3px solid slateblue; }
+.nav-item.active{padding: 0 10px 0 10px; list-style:none; position: relative; text-align: left; display: table-cell; font-size: 18px;color: #fff; color: slateblue;  border-bottom: 3px solid slateblue;}
+/*border用*/
+#nav-hotel{border-left: 1px solid black; padding-left: 10px;}
+
+footer{width:100%;height:100px;bottom: 0; text-align: center; position: relative; display: inline-block; background-color: #f0f2f5; color: black;}
+
+/*go-top-btn*/
+.top-btn-con{ display: none; position: fixed; width: 38px; height: 38px; right: 30px; bottom: 100px; outline: 0; border: 0; background: transparent; cursor: pointer; color: white; background-color: slateblue;}
+.go-top { font-size: 28px; font-weight: bold; width: 100%; height: 100%; border: 0; cursor: pointer; color: white; background-color: slateblue;}

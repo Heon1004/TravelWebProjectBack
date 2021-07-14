@@ -1,0 +1,73 @@
+/*top-nav*/
+.mark-con{  width: 100; display: block; left: 300px; margin-top: 10px; float: left; position: absolute; }
+.mark-item {display: inline-flex; color: slateblue;}
+.mark-item>span{margin-right: 10px;}
+.mark-item>.mark-item-active{color: slateblue;}
+.mark-item>.num {margin:0 10px; background-color: slateblue; color: white; width: 25px; text-align: center; border-radius: 20px;}
+.mark-item>.num-null{margin:0 10px; background-color: gray; color: white; width: 25px; text-align: center; border-radius: 20px;}
+.mark-item-null{color: gray;}
+.mark-item:last-child::after{content: none;}
+.mark-item:last-child{color: gray;}
+.mark-item::after{content: ">";}
+
+/*content*/
+.payment-con{width: 1177px; height: 100%; margin: 0 150px; display: inline-block; position: relative;}
+.hotel-info-con{width: 700px; box-sizing: border-box; float: left;  margin: 15px; padding: 10px; background-color: white; word-break: break-all;}
+.hotel-info-box{width: 100%; height: 100%;  line-height: 30px; padding-bottom: 15px;}
+.hotel-title{display: block; font-size: 28px;}
+.review-score{font-size: 16px; margin: 0;  }
+.hotel-address{font-size: 14px; display: block;}
+.checkin-time{font-size: 16px; font-weight: bold;}
+.hotel-option-item ul{margin: 0; padding: 0;}
+.hotel-option-item li{display: inline-flex; list-style: none; margin-right: 10px;}
+.room-info-link{float: right; background-color: white; border: none; cursor: pointer; font-weight: bold; color: slateblue;}
+.room-info-link:hover{text-decoration: underline;}
+
+.user-date-con{display: inline-block; position: relative;  line-height: 30px; height: 100%; width: 700px; margin: 0 12px 0 12px; border: 3px solid darkgray; transform: none; }
+.date-info{display: flex; background-color: white ; width: 670px; height: 60px; padding: 15px;  text-align: left; font-size: 14px; color: slategrey; border-bottom:1px dotted gray;}
+.nights{height: 30px; width: 30px; margin: 25px 60px 0 0; color: black;}
+.date-items{display: block; height: 30px; width: 200px;}
+.date-items>span{width: 100%; display: inline-block;}
+.date-items>input{width: 150px; text-align: left;}
+.date-items>input{border: none; border-bottom: 1px solid gray; color: black; font-size: 18px; font-weight: bold; text-decoration: none; outline:none;}
+.date-items>input:focus{border-bottom: 2px solid slateblue; }
+.room-count{text-align: left; color: red; font-size: 16px;font-weight: bold;}
+
+.guest-info{display: inline-block; line-height: 30px; width: 670px; background-color: white; padding: 0 15px;}
+.guest-title{display: block; position: relative; font-size: 20px;}
+.guest-remark{font-size: 14px; color: black;}
+.guest-name-con{display: flex; width: 100%; position: relative; height: 100%;}
+.margin-name-con{margin-right: 100px;}
+.frist-name>input:focus , .english-name>input:focus{outline: none; border: 0;  border-bottom: 2px solid slateblue; margin-bottom: 2px;}
+.frist-name>input , .english-name>input{display: block; outline: none; border: 0; margin-bottom: 15px; block-size: 40px; font-size: 16px; border-bottom: 1px solid gray; width: 280px;}
+.guest-add-con{margin-bottom: 15px; width: 150px;}
+.guest-add-con>label{cursor: pointer; font-weight: bold; font-size: 14px; line-height: 21px;}
+.guest-add-con>label>button{background-color: slateblue; border: none; color: white; font-size: 14px; border-radius: 25px; margin-right: 10px; cursor: pointer;}
+.guest-email-con , .guest-tel-con{ display: flex;  height: 80px;}
+.guest-email>input , .guest-tel>input{ border: 0; border-bottom: 1px solid gray; margin-bottom: 15px; block-size: 40px; width: 280px; font-size: 16px;}
+.guest-email>input:focus , .guest-tel>input:focus{border-bottom: 2px solid slateblue; outline: none; }
+
+.arrival-con{background-color: white; padding: 15px; width: 670px; display: block; margin-top: 10px;}
+.arrival-con>h3{font-size: 22px; text-align: left; margin: 0;}
+.arrival-con>p{font-size: 14px; margin: 0;}
+
+.payment-btn-con{background-color: white; padding: 15px; width: 670px; display: block; margin-top: 10px;}
+.agreement-content{font-size: 14px; text-align: left; margin: 0;}
+.do-pay-btn{width: 100%; background-color: orange; color: white; border: none; height: 50px; font-size: 24px; font-weight: bold; text-align: center; cursor: pointer;}
+/*side-bar*/
+.side-bar-con{width: 432px; float: right; margin: 15px 15px 15px 0; position: relative;  display: block; }
+.side-bar{width: 431px; padding: 10px 24px 24px 24px; position: relative; display: block; box-sizing: border-box; background-color: white; z-index: 1;}
+.side-item-box{width: 100%; height: 100px; border-bottom: 1px dotted gray; line-height: 30px;}
+.side-item{display: block; width: 100%; font-size: 24px; text-align: left;}
+.side-item-price{width: 200px; text-align: right; display: block; font-size: 24px; float: right; font-weight: bold; color: slateblue;}
+.side-item2{width: 100%; text-align: left; display: block; margin: 5px 0; font-size: 14px; }
+.side-item3{width: 100%; text-align: right; display: block; margin: 5px 0; font-size: 14px; color: black;}
+.pay-point{width: 100%; display: block; margin-top: 10px; line-height: 30px;}
+.point-title{text-align: left; font-size: 22px; margin-bottom: 5px; display: block; }
+.point-item{display: block; font-size: 14px; }
+.point-item>span{display: block; float: right; }
+
+/*bottom back.history a link*/
+.before-page-btn{padding: 0 15px; margin: 15px 0;}
+.before-page-btn>a{text-decoration: none; color: black; font-size: 16px; line-height: 40px;}
+.before-page-btn>a:hover{color: slateblue;}

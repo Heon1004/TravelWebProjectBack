@@ -1,0 +1,74 @@
+.container-box{width: 100%; height: 100%;position: relative; display: inline-block; margin: 0 0 10px 0; padding: 0;}
+.container{margin: 0 150px; padding: 10px; height: 100%; display: block;}
+
+/*left-side-bar*/
+.side-bar-con{width: 250px; display: block; position: relative; float: left; background-color: white; padding: 15px 0;}
+.side-nav{margin: 0; padding: 0;}
+.side-item{text-decoration: none; font-weight: bold; list-style: none; display: block;}
+.side-item>button {background-color: white; padding-left: 30px; border: none; font-size: 16px; font-weight: bold; text-align: left; cursor: pointer;}
+.side-item>button:hover {color: slateblue;}
+.submenu>li{height: 35px;} 
+.submenu{margin: 0; padding: 0; text-align: left; font-weight: 100; text-decoration: none; list-style: none;}
+.submenu>li>a{ color: gray; line-height: 30px;font-size: 14px; padding-left: 40px; font-weight: bold;} 
+.submenu>li>a:hover{color: slateblue; }
+.side-nav>li{ line-height: 30px;}
+.submenu>.item.active{background-color: rgb(145, 128, 255,0.2); border-left: 3px solid slateblue;}
+.submenu>.item.active>a{color: slateblue;}
+
+/*Right-side*/
+.main-box{background-color: white; width: 870px; display: block; position: relative; float: right; padding: 20px; box-sizing: border-box;}
+.main-nav{background-color: white; width: 100%; display: block; height: 30px; padding-bottom: 20px; margin: 0; padding: 0; border-bottom: 2px solid gainsboro; line-height: 20px;  box-sizing: border-box;}
+.main-nav>a{text-decoration: none; height: 28px; padding: 0 20px;display: inline-block; text-align: center; }
+.main-nav>a>span{font-size: 18px; color: black;}
+.main-nav>a>span:hover{color: slateblue;}
+.main-item.active{border-bottom: 3px solid slateblue;}
+.search-bar{margin: 20px 0; width: 100%;display: block; position: relative; }
+.search-bar>form{display: flex; width: 100%; height: 25px; text-align: center; padding: 0;}
+.search-bar>form>select{width: 120px; height: 25px; outline: none;}
+.search-bar>form>button{width: 80px; height: 25px; margin: 0; background-color: slateblue; color: white; border-radius: 5px; cursor: pointer; border: none;}
+.search-item{width: auto; display: block; padding: 0; margin: 0 20px 0 20px;}
+#search-number>input{width: 250px; height: 20px; display: block; outline: none;}
+#search-number{display: block;}
+#search-date{display: none;}
+#search-date>input{display: block; height: 20px; width: 150px; font-weight: bold; font-size: 14px; outline: none;}
+
+/*List-Content*/
+.content-box{display: block; position: relative; width: 100%; padding: 0; margin: 0 0 10px 0; box-sizing: border-box; border: 3px solid gainsboro;}
+.content-title{height: 30px; border-bottom: 3px solid gainsboro; display: flex; margin:0; padding: 0 5px; box-sizing: border-box; width: 100%; line-height: 30px;}
+.content-title-item{ width: 30%; text-align: left; font-size: 14px;}
+.content-title-item>button{ width: 120px; height: 100%; text-align: center;  float: right; cursor: pointer; display: block; border: none; background-color: orange; border-radius: 5px; color: white;}
+#content-submit{width: 30%; text-align: right; }
+.content-main{line-height: 30px; padding: 5px; display: inline-block; width: 100%; box-sizing: border-box;}
+.hotel-title{font-size: 24px; display: inline-block;}
+.hotel-title>a{color: black; }
+.hotel-title>a:hover{color: slateblue; }
+.hotel-address{font-size: 14px; color: black;}
+.hotel-booking-date{font-size: 14px; margin-top: 10px;}
+.hotel-checkin-time{font-size: 14px; }
+.booking-price{text-align: center;  width: 100px; display: flex; float: right; font-size: 18px; color: slateblue; font-weight: bold;}
+
+/*Page-btn*/
+.page-btn-con{position: relative; display: block; text-align: center;  margin-top: 20px; line-height: 30px; box-sizing: border-box;}
+.page-btn{font-weight: bold; display: block;}
+.page{ margin: 0 10px; display: inline-block; padding-bottom: 8px; padding-left: 2px; border-radius: 4px; width: 20px; height: 20px; font-size: 12px;text-transform: uppercase;letter-spacing: 2.5px;color: gray;background-color: gainsboro;transition: all 0.3s ease 0s;}
+.page:hover{background-color: #2EE59D;color: #fff;transform: translateY(0px);}
+.page.active{color: white; background-color: #2EE59D;}
+#before-btn, #after-btn {color: black; font-size: 16px; }
+#before-btn:hover, #after-btn:hover {color: slateblue; font-weight: bold; }
+
+
+/*Review*/
+.review-modal-con{display: none;position: fixed; z-index: 10;left: 0;top: 0; height: 100%; width: 100%; overflow: auto; background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4); }
+.review-modal{background-color: #fefefe; margin: 60px auto; padding: 20px;border: 1px solid #888;width: 383px; border-radius: 30px; text-align: left; word-break:break-all;}
+.review-title{ color: rgb(172, 71, 255);font-size: 24px; text-align: center; margin-bottom: 20px; background-color: white; border: none;}
+.review-score-box{margin-top: 10px;}
+.review-content>textarea{height: 350px; width: 100%; outline: none; border: 1px solid gray;}
+.review-score-box{ padding: 2px 0 0 0; box-sizing: border-box; display: inline-block; width: 70%; position: relative; height: 34px;}
+.review-item{ display: inline-block; position: relative; margin: 0 0 0 5px; padding-right: 10px; text-align: center; height: 28px;}
+.review-item:hover{  border-radius: 8px; color: slateblue;}
+.review-item > label:hover{color: slateblue;}
+.review-item >label{ cursor: pointer;}
+.booking-date{display: flex; float: right; height: 50px; width: 30%; flex-direction: column; text-align: center; font-size: 14px;}
+.write-review-btn{margin-top:20px;width: 100%;}
+.write-review-btn>input{width: 100%;height: 50px;border: 0;outline: none; font-size: 24px; border-radius: 40px;background: linear-gradient(to left, rgb(255, 77, 46), slateblue);color: white;letter-spacing: 2px; cursor: pointer;}
+
